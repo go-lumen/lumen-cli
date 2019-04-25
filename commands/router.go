@@ -1,7 +1,7 @@
 package commands
 
 import (
-	"github.com/adrien3d/lumen/utils"
+	"github.com/go-lumen/lumen/utils"
 	"github.com/spf13/cobra"
 	"os"
 )

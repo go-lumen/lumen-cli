@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/adrien3d/lumen/commands"
-	"github.com/adrien3d/lumen/utils"
+	"github.com/go-lumen/lumen/commands"
+	"github.com/go-lumen/lumen/utils"
 	"github.com/spf13/cobra"
 )
 
@@ -10,7 +10,7 @@ func main() {
 	var cmdNew = &cobra.Command{
 		Use:   `new [namespace]`,
 		Short: `Generating files`,
-		Long:  `Generates files from base-api`,
+		Long:  `Generates files from lumen-api`,
 		Args:  cobra.MinimumNArgs(1),
 		Run:   commands.BoilerplateCmd,
 	}
@@ -56,7 +56,7 @@ func main() {
 
 	var rootCmd = &cobra.Command{
 		Use:   `lumen`,
-		Short: `Lumen is a CLI that helps you generating API code for base-api`}
+		Short: `Lumen is a CLI that helps you generating API code for lumen-api`}
 	rootCmd.AddCommand(cmdNew, cmdModel, cmdGenerate, cmdController, cmdRouter, cmdStore)
 
 	err := rootCmd.Execute()

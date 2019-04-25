@@ -1,4 +1,4 @@
-module github.com/adrien3d/lumen
+module github.com/go-lumen/lumen
 
 go 1.12
 
@@ -6,7 +6,7 @@ require (
 	github.com/MichaelTJones/walk v0.0.0-20161122175330-4748e29d5718 // indirect
 	github.com/abiosoft/ishell v2.0.0+incompatible
 	github.com/abiosoft/readline v0.0.0-20180607040430-155bce2042db // indirect
-	github.com/adrien3d/base-api v0.0.0-20190311150422-81c2f8819f76 // indirect
+	github.com/go-lumen/lumen-api v0.0.0-20190311150422-81c2f8819f76 // indirect
 	github.com/chzyer/logex v1.1.10 // indirect
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e // indirect
 	github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1 // indirect

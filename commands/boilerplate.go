@@ -2,7 +2,7 @@ package commands
 
 import (
 	"fmt"
-	"github.com/adrien3d/lumen/utils"
+	"github.com/go-lumen/lumen/utils"
 	"github.com/spf13/cobra"
 	"io/ioutil"
 	"os"
@@ -34,8 +34,8 @@ func BoilerplateCmd(cmd *cobra.Command, args []string) {
 	}
 
 	// Step 2: Get lumen directory path from GOPATH environment variable
-	searchDir := os.Getenv("GOPATH") + `/src/github.com/adrien3d/lumen-api`
-	fmt.Println(`Base-api dir is: `, searchDir)
+	searchDir := os.Getenv("GOPATH") + `/src/github.com/go-lumen/lumen-api`
+	fmt.Println(`lumen-api dir is: `, searchDir)
 
 	// Step 3: Copying files in a new directory
 	currentDir, err := os.Getwd()
@@ -64,7 +64,7 @@ func BoilerplateCmd(cmd *cobra.Command, args []string) {
 	// Step 5: Changing namespace in files
 	for _, file := range filesList {
 		//fmt.Println(`Changed namespace in: `, file)
-		utils.CheckErr(ReplaceNamespace(file, `github.com/adrien3d/base-api`, args[0]))
+		utils.CheckErr(ReplaceNamespace(file, `github.com/go-lumen/lumen-api`, args[0]))
 	}
 
 	os.Exit(1)

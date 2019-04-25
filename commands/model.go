@@ -2,7 +2,7 @@ package commands
 
 import (
 	"github.com/abiosoft/ishell"
-	"github.com/adrien3d/lumen/utils"
+	"github.com/go-lumen/lumen/utils"
 	"github.com/serenize/snaker"
 	"github.com/spf13/cobra"
 	"os"
