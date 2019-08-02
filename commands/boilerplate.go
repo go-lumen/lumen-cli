@@ -2,7 +2,7 @@ package commands
 
 import (
 	"fmt"
-	"github.com/go-lumen/lumen/utils"
+	"github.com/go-lumen/lumen-cli/utils"
 	"github.com/spf13/cobra"
 	"io/ioutil"
 	"os"
