@@ -1,4 +1,4 @@
-module github.com/go-lumen/lumen
+module github.com/go-lumen/lumen-cli
 
 go 1.12
 
